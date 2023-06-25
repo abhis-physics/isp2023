@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Page.Title }}</title>
+  <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+    integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+    integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/svelte/{{ .Site.Data.svelte.css }}" />
+  <script type="module" defer src="/svelte/{{ .Site.Data.svelte.js }}" />
+  </script>
+
+  <!-- pwa -->
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" type="image/x-icon" href="/img/favicon.png" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+</head>
+
+<body class="bg-base-100">
+
+  {{ block "header" . }}
+  <!-- navbar -->
+  {{ end }}
+  <main class="container p-8">
+
+    {{ block "main" . }}
+    <!-- main -->
+    {{ end }}
+  </main>
+  {{ block "footer" . }}
+  <!-- footer -->
+  {{ end }}
+
+  <toast-message></toast-message>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "$", right: "$", display: false },
+              { left: "\\(", right: "\\)", display: false },
+              { left: "\\[", right: "\\]", display: true },
+          ],
+          // • rendering keys, e.g.:
+          throwOnError: false,
+      });
+  });
+</script>
+
+
+</html>

@@ -1,0 +1,7 @@
+{{ define "header" }}
+{{ partial "navbar" }}
+{{ end }}
+{{ define "main" }}
+<h1 class="text-center text-4xl bg-gradient-to-r from-green-400 to-cyan-500 bg-clip-text text-transparent">{{ .Title }}</h1>
+{{ .Content }}
+{{ end }}
