@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './special-effects.scss'; 
+
+h1{
+    @apply text-4xl my-5;
+}
+
+h2 {
+    @apply text-3xl my-5;
+}
+
+h3 {
+    @apply text-2xl my-5;
+}
+
+h4 {
+    @apply text-xl my-5;
+}
+
+h5 {
+    @apply text-lg my-5;
+}
+
+h6 {
+    @apply text-base my-5;
+}
+
+p {
+    @apply my-3;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    @apply bg-primary;
+}
+
+body::-webkit-scrollbar-thumb {
+    @apply bg-secondary;
+}
