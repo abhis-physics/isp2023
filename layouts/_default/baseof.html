@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{ .Page.Title }}</title>
+  <meta name="description" content="{{ .Page.Description }}">
   <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
     integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
@@ -29,7 +30,7 @@
   {{ block "header" . }}
   <!-- navbar -->
   {{ end }}
-  <main class="container p-8">
+  <main class="container p-8 md:px-32">
 
     {{ block "main" . }}
     <!-- main -->
