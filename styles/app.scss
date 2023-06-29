@@ -43,3 +43,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     @apply bg-secondary;
 }
+
+ol,ul{
+    list-style: auto;
+}
