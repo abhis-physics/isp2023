@@ -26,25 +26,11 @@
     milestones: Milestone[];
     id: string;
   }
-
-  interface NewMilestone {
-    title: string;
-    hours: string;
-    intensity: string;
-    difficulty: string;
-    description: string[];
-    index: number;
-  }
-
-  interface NewWeekDocument {
-    week: string;
-    milestones: NewMilestone[];
-    id: string;
-  }
+  
 
   let runSpinner = true;
 
-  export const timeline = writable<NewWeekDocument[]>([]);
+  export const timeline = writable<WeekDocument[]>([]);
 
   const collectionRef = collection(db, "week");
 
@@ -71,18 +57,7 @@
         return weekA - weekB;
       });
 
-      const newWeekDocuments = weekDocuments.map((weekDocument) => ({
-        ...weekDocument,
-        milestones: weekDocument.milestones.map((milestone) => ({
-          ...milestone,
-          description: milestone.description
-            .split(/\d./gm)
-            .map((d) => d.trim())
-            .filter((d) => d != ""),
-        })),
-      }));
-
-      timeline.set(newWeekDocuments);
+      timeline.set(weekDocuments);
       runSpinner = false;
     } catch (error) {
       // Handle any errors that occur during data fetching
@@ -123,9 +98,7 @@
                       class="milestoneTitle"
                       on:click={() =>
                         router.go(
-                          `/week/${weekDocument.week}/milestone-${
-                            milestone.index + 1
-                          }`
+                          `/week/${weekDocument.week}/${milestone.title.replaceAll(" ","-").toLocaleLowerCase()}`
                         )}
                     >
                       {milestone.title}
@@ -135,11 +108,9 @@
                     {/if}
                   </div>
                 </div>
-                <ol class="milestoneDescription">
-                  {#each milestone.description as milestoneItem}
-                    <li>{milestoneItem}</li>
-                  {/each}
-                </ol>
+                <div class="milestoneDescription">
+                  {milestone.description}
+                </div>
                 {#if milestone.intensity != ""}
                   <div class="ratingContainer">
                     <div class="rating rating-sm rating-half my-2">
@@ -367,7 +338,7 @@
     background-color: transparent;
   }
 
-  .rating input:checked ~ input{
+  .rating input:checked ~ input {
     --tw-bg-opacity: 0.2;
   }
 
@@ -404,7 +375,7 @@
   .rating-half.rating-sm input:not(.rating-hidden) {
     width: 0.5rem;
   }
-  
+
   .bg-green-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(34 197 94 / var(--tw-bg-opacity));
