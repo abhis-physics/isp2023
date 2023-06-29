@@ -10,3 +10,15 @@
 {:else}
     <li><modal-action name="login">Login</modal-action></li>
 {/if}
+
+<style>
+    li{
+        position: relative;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        @apply px-3 py-1;
+    }
+</style>
