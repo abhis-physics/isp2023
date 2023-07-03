@@ -1,5 +1,5 @@
 {
-  "name": "ISP",
+  "name": "isp",
   "version": "2.0.0",
   "description": "Instense Support Program",
   "main": "index.ts",
@@ -9,6 +9,7 @@
     "hugo": "hugo server --forceSyncStatic --port 6969",
     "start": "concurrently \"vite build --watch\" \"npm run hugo\"",
     "vbuild": "vite build",
+    "svelte": "vite build --watch",
     "build": "vite build && hugo",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
