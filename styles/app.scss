@@ -2,29 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './special-effects.scss'; 
+@import './special-effects.scss';
 
-h1{
+h1 {
     @apply text-4xl my-5;
 }
 
 h2 {
+    @apply gradient-text-pink;
     @apply text-3xl my-5;
 }
 
 h3 {
+    @apply gradient-text-pink;
     @apply text-2xl my-5;
 }
 
 h4 {
+    @apply gradient-text-pink;
     @apply text-xl my-5;
 }
 
 h5 {
+    @apply gradient-text-pink;
     @apply text-lg my-5;
 }
 
 h6 {
+    @apply gradient-text-pink;
     @apply text-base my-5;
 }
 
@@ -44,6 +49,7 @@ body::-webkit-scrollbar-thumb {
     @apply bg-secondary;
 }
 
-ol,ul{
+ol,
+ul {
     list-style: auto;
 }
