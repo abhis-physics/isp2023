@@ -44,7 +44,7 @@ Thus we need to find the $R_0$ to get the nuclear radius. The study is divided i
 1. Study based on the range of nuclear forces, the nucleus is probed by a nucleon or light nucleus
 2. Study the electric field and charge distribution of the nucleus, the nucleus is probed by electron or muon.
 
-![methods to find R0](../assets/methods_to_find_r0.svg)
+![methods to find R0](assets/methods_to_find_r0.svg)
 
 ## Binding Energy
 
@@ -62,7 +62,7 @@ The binding energy per nucleon ($B = \frac{E_B}{A}$) is defined as the average e
 
 ### Binding energy per nucleon vs Mass number
 
-![Binding energy per nucleon vs mass number graph](../assets/be.svg)
+![Binding energy per nucleon vs mass number graph](assets/be.svg)
 
 #### Results
 

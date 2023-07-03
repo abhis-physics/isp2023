@@ -13,21 +13,21 @@ Spectroscopy is the branch of physics that serves as macroscopic as well as micr
 
 method used for seperation of light components for study
 
-![seperation of light components](../assets/methods_table.svg)
+![seperation of light components](assets/methods_table.svg)
 
 materials used for study at different wavelengths.
 
-![materials used for different wavelengths](../assets/materials_used.svg)
+![materials used for different wavelengths](assets/materials_used.svg)
 
 ## Production of spectra
 
-![different methods of production of light](../assets/production_of_light.svg)
+![different methods of production of light](assets/production_of_light.svg)
 
 *Absorption spectra* is produced in atoms when they absorb photons of specific frequencies that match the energy gap between their ground state and their excited state. When an atom absorbs a photon, one of its electrons jumps to a higher energy level. The absorbed frequencies appear as dark lines or gaps in the spectrum when the transmitted light is analyzed.
 
 *Emission spectra* is produced in atoms when they release photons of specific frequencies that match the energy gap between their excited state and their ground state. When an atom releases a photon, one of its electrons falls to a lower energy level. The emitted frequencies appear as colored lines in the spectrum when the emitted light is analyzed.
 
-![continous and non continous spectra](../assets/continous_non-continous_spectra.svg)
+![continous and non continous spectra](assets/continous_non-continous_spectra.svg)
 
 ## Wavenumber
 
