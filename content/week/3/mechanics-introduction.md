@@ -15,11 +15,11 @@ description: Mechanics Introduction UPSC Physics Optional
 
 ## Cartesian Coordinate System
 
-![cartesian coordinate system](../assets/cartesian.svg)
+![cartesian coordinate system](assets/cartesian.svg)
 
 ## Plane Polar Coordinate System
 
-![plane polar coordinate system](../assets/plane-polar.svg)
+![plane polar coordinate system](assets/plane-polar.svg)
 
 ### unit vectors
 
@@ -53,7 +53,7 @@ $ = (\ddot{r} - r\dot{θ}^2)\hat{r} + (r\ddot{θ}+2\dot{r}\dot{θ})\hat{θ}$
 
 ## Spherical Polar Coordinate System
 
-![spherical polar coordinate system](../assets/spherical-polar-coordinates.svg)
+![spherical polar coordinate system](assets/spherical-polar-coordinates.svg)
 
 $\vec{r}$ is the **radial vector**, $θ$ is the **co-latitude** and $ϕ$ is the **azimuthal angle**.
 
@@ -283,3 +283,21 @@ $= - \int_1^2 dV = V_2 - V_1$
 Thus, for a conservative system the work done by the force on moving a particle from $1 \to 2$ is the difference of the potential of particle at the postition $1$ and $2$
 
 Also the total energy of the system is conserved as it is independent of the position.
+
+#### Impulsive force
+
+Time intergral of the force also known as the impulsive force gives the difference in linear momentum at different times.
+
+Using second law of motion,
+
+$\int_{t_1}^{t_2} \vec{F}dt = \int_{t_1}^{t_2} \frac{d\vec{P}}{dt} = \int_{t_1}^{t_2} d\vec{p} = p_2 - p_1$
+
+### Angular momentum
+
+Angular momentum(aka moment of momentum) is given by,
+
+$\vec{L} = \vec{r} \times \vec{p} = \vec{r} \times m\vec{v}$
+
+Torque(aka moment of force) is given by,
+
+$\vec{N} = \vec{r} \times \vec{F} = \frac{d\vec{L}}{dt}$
