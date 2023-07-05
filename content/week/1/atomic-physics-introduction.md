@@ -34,10 +34,10 @@ materials used for study at different wavelengths.
 wavenumber($\bar{v}$) represents the number of waves per unit length, thus wavenumber can be calculated without using the velocity of light $c$ and wavenumber is used for measurement purposes in spectroscopy. But it is not an absolute constant and depends upon the refractive index of the medium. Wavenumber energy equivalent can be deducted from Planck's radiation law,
 $$ \Delta{E} = hv = \frac{ch}{\lambda} = ch\bar{v}$$
 
-The generalised equation for spectrum is 
+The generalised equation for spectrum is
 $$ \bar{v} = R
-\begin{pmatrix} 
-\frac{1}{n^2_1} - \frac{1}{n^2_2} 
+\begin{pmatrix}
+\frac{1}{n^2_1} - \frac{1}{n^2_2}
 \end{pmatrix}
 $$
 where $R = 1.097 \times 10^7 m^{-1}$, Rydberg constant and $n = 1, 2, 3,.....$ and $n_1 < n_2$
